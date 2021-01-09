@@ -3,9 +3,11 @@
 
 <head>
 
+  <link rel="stylesheet" href="kontaktaoss.css">
   <meta name="Kontakta oss" content="hurkontaktaoss">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -26,42 +28,39 @@
 </head>
 
 <body>
-  <div class="container ">
-    <div class="row justify-content-center mt-4">
-      <div class="col-6">
-        <label for="exampleFormControlInput1" class="form-label">Förnamn</label>
-        <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-      </div>
-     
-    </div>
-    <div class="row justify-content-center mt-4">
-        <div class="col-6">
-          <label for="exampleFormControlInput1" class="form-label">Efternamn</label>
-          <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-        </div>
-      </div>
-      <div class="row justify-content-center mt-4">
-        <div class="col-6">
-          <label for="exampleFormControlInput1" class="form-label">E-postadress</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-        </div>
-      </div>
-      <div class="row justify-content-center mt-4">
-          <div class="col-6">
-            <label for="exampleFormControlTextarea1" class="form-label"> Textarea</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  <div class="backgroundimg">
+    <div class="container ">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="contact-info">
+            <img class="contactimg" src="images/kontakta oss.jpg" alt="image">
+            <h2>kontakta Oss </h2>
+            <h4>Vi skulle gärna höra från dig !</h4>
           </div>
         </div>
-        
-        <div class="container">
-          <div class="row justify-content-center mt-4">
-            <div class="col-2">
-          <button type="Skicka in" class="btn btn-primary">Skicka in</button>
+
+        <div class="col-9">
+          <label for="exampleFormControlInput1" class="form-label">Förnamn</label>
+          <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+
+          <label for="exampleFormControlInput1" class="form-label">Efternamn</label>
+          <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+
+          <label for="exampleFormControlInput1" class="form-label">E-postadress</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+
+          <label for="exampleFormControlTextarea1" class="form-label"> Textarea</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+          <div class="col-2">
+            <div class="skickain">
+              <a href="mailto:jhon.elen@gmail.com" target="_blank" class="btn btn-primary">Skicka in</a>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
 
-      </div>
 </body>
 
 </html>
