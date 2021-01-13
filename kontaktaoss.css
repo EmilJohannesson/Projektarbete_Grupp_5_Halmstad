@@ -1,9 +1,8 @@
 
-.body{
-    margin: 0%;
-    padding: 0%;
-    height: 100%;
+ html,body{
+     height: 100%;
     width: 100%;
+    
 }
 .backgroundimg{
     background-color: darkcyan;
@@ -14,14 +13,25 @@
     margin-top:  5%;
 }
 .contactimg{
-width: 2000px;
-height:2000px;
+width: 1000px;
+height:1000px;
 height: 24rem;
 width: 17.7rem;
 }
-.skickain {
-    margin: 4%;
-}
 .form-label{
-    font-size: 1.5em;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    
 }
+.btn-primary{
+    background-color: #6648b1;
+    margin: 4%;
+    border: 1px solid !important;
+
+    
+}
+
+        
+
+   
+    
