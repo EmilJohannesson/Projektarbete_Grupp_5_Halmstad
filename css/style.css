@@ -19,6 +19,8 @@
     border: 3px solid #333;
     background-color: #dfdfdf;
     max-height: 32%;
+    border-radius: 8px;
+    overflow: hidden;
     position: relative;
   }
   
@@ -55,7 +57,7 @@
       grid-template-areas:
       "välkomstsida produkter"
       "anställda kontakt";
-      background: black;
+      background: rgb(216, 216, 216);
       font-size: 16px;
     }
 
@@ -78,7 +80,7 @@
     }
 
     .sidebar{
-        display: none;
+      display: none;
     }
 
     .carousel{
@@ -98,8 +100,6 @@
       "sidebar main"
       "sidebar footer";
     }
-
-    
   
     .sidebar{
       grid-area: sidebar;
@@ -112,9 +112,6 @@
     .nav-mobil{
         display: none;
     }
-
-    
-
   }
 
   @media only screen and (min-width: 1000px){
@@ -188,7 +185,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border:2px solid blue;
+    border:2px solid rgb(0, 0, 0);
     border-radius: 5px;
   }
   
@@ -200,7 +197,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border:2px solid blue;
+    border:2px solid rgb(0, 0, 0);
   }
   
   .anställda:hover{
@@ -211,7 +208,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border:2px solid blue;
+    border:2px solid rgb(0, 0, 0);
   }
   
   .kontakt:hover{
@@ -222,21 +219,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border:2px solid blue;
+    border:2px solid rgb(0, 0, 0);
   }
   
   .sidebar{
+    background: rgb(216, 216, 216);
     text-align: center;
     font-size: 16px;
   }
   
   .nav-list{
+    background: whitesmoke;
     list-style: none;
   }
   
   .nav-item{
     margin: 5rem 0;
     margin-top: 2rem;
+    ;
   }
   
   .nav-link{
@@ -263,6 +263,7 @@
   }
   
   .maincontent{
+    background: rgb(216, 216, 216);
     grid-area: main;
   }
   
@@ -348,11 +349,10 @@
   position: absolute;
   right: 0;
   bottom: 18%;
-  height: 50%;
+  height: 45%;
   width: 50%;
   border: solid 2px black;
 }
-
 .maincontent{
   overflow: auto;
 }
@@ -389,4 +389,49 @@
   margin: 4%;
   border: 1px solid !important;
   
+}
+.carousel-caption h3, .carousel-caption ul{
+  font-size: small;
+  color: white;
+  list-style-type: circle;
+  text-align: left;
+  list-style: inside;
+  text-align: left;
+}
+.carousel-caption{
+  left: 5%;
+  bottom: 5%;
+}
+.carousel-caption h3, .carousel-caption h2, .carousel-caption ul{
+  text-shadow: -1px 1px 0 black,
+ 1px 1px 0 black,
+ 1px -1px 0 black,
+-1px -1px 0 black;
+} 
+.carousel-caption h2{
+  color: red;
+  text-align: left;
+}
+.footer ul{
+  text-align: center;
+  list-style: none;
+}
+.footer li{
+  display: inline;
+}
+
+.om_oss{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.om_oss p{
+  font-size: 16px;
+  width: 80%;
+  line-height: 1.8;
+}
+
+.bilder img{
+  width: 20%;
+  padding: 5%;
 }
