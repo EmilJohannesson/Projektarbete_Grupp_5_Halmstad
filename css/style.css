@@ -122,6 +122,7 @@
   }
 
   .flexbox-item ol{
+    padding-top: 5px;
     list-style-type: circle;
   }
 
