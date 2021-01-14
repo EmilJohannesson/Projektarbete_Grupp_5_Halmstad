@@ -273,7 +273,8 @@
 }
 
 .carousel-caption h3, ul{
-  color: black;
+  font-size: small;
+  color: white;
   list-style-type: circle;
   text-align: left;
   list-style: inside;
@@ -283,7 +284,12 @@
   text-align: left;
 }
 .carousel-caption{
-  text-shadow: white;
   left: 5%;
   bottom: 0%;
+}
+.carousel-caption h3, h2, ul{
+  text-shadow: -1px 1px 0 black,
+ 1px 1px 0 black,
+ 1px -1px 0 black;
+-1px -1px 0 black;
 }
