@@ -99,6 +99,7 @@
     border: 3px solid #333;
     background-color: #dfdfdf;
     max-height: 32%;
+    position: relative;
   }
 
   .flexbox-item a{
@@ -125,8 +126,10 @@
   }
 
   .flexbox-item h2{
+    position: absolute;
     color: red;
-    text-align: center;
+    bottom: 7%;
+    left: 37%;
   }
 
   .välkomstsida:hover{
