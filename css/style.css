@@ -19,7 +19,7 @@
       height: 100vh;
       display: grid;
       grid-template-columns: 100%;
-      grid-template-rows: 25% 15% 1000px 10% 15%;
+      grid-template-rows: 10% 15% 1000px 10% 15%;
       grid-template-areas:
       "carousel"
       "nav"
@@ -61,17 +61,17 @@
   @media only screen and (min-width: 765px){
     #wrapper{
       width: 100%;
-      padding-left: 5%;
-      padding-right: 5%;
       height: 100vh;
       display: grid;
       grid-template-columns: 20% 80%;
-      grid-template-rows: 40% 1000px 15%;
+      grid-template-rows: 0% 1000px 15%;
       grid-template-areas: 
       "sidebar carousel"
       "sidebar main"
       "sidebar footer";
     }
+
+    
   
     .sidebar{
       grid-area: sidebar;
@@ -87,6 +87,39 @@
     }
 
   }
+
+  @media only screen and (min-width: 1000px){
+    #wrapper{
+      width: 1000px;
+      height: 100vh;
+      margin-left: auto;
+      margin-right: auto;
+      display: grid;
+      grid-template-columns: 20% 80%;
+      grid-template-rows: 0% 1000px 15%;
+      grid-template-areas: 
+      "sidebar carousel"
+      "sidebar main"
+      "sidebar footer";
+    }
+
+    
+  
+    .sidebar{
+      grid-area: sidebar;
+      background: black;
+    }
+
+    .sticky{
+        display: none;
+    }
+
+    .nav-mobil{
+        display: none;
+    }
+
+  }
+  
 
   .flexbox-container{
     display: flex;
