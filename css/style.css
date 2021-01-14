@@ -226,3 +226,7 @@
     grid-area: footer;
     background: green;
   }
+  
+  .carousel-item img{
+    height: 100%;
+  }
