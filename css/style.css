@@ -185,7 +185,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border:2px solid blue;
+    border:2px solid rgb(0, 0, 0);
     border-radius: 5px;
   }
   
@@ -197,7 +197,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border:2px solid blue;
+    border:2px solid rgb(0, 0, 0);
   }
   
   .anställda:hover{
@@ -208,7 +208,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border:2px solid blue;
+    border:2px solid rgb(0, 0, 0);
   }
   
   .kontakt:hover{
@@ -219,7 +219,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border:2px solid blue;
+    border:2px solid rgb(0, 0, 0);
   }
   
   .sidebar{
