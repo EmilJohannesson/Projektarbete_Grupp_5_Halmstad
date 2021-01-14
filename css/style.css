@@ -19,6 +19,8 @@
     border: 3px solid #333;
     background-color: #dfdfdf;
     max-height: 32%;
+    border-radius: 8px;
+    overflow: hidden;
     position: relative;
   }
   
@@ -348,7 +350,7 @@
   position: absolute;
   right: 0;
   bottom: 18%;
-  height: 50%;
+  height: 45%;
   width: 50%;
   border: solid 2px black;
 }
