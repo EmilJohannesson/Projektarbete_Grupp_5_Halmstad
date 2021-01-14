@@ -55,6 +55,10 @@
     .sidebar{
         display: none;
     }
+
+    .carousel{
+      display: none;
+    }
   }
   
   @media only screen and (min-width: 765px){
@@ -83,6 +87,10 @@
 
     .nav-mobil{
         display: none;
+    }
+
+    .container, .row, #expandedImg{
+      display: none;
     }
 
   }
@@ -115,6 +123,10 @@
 
     .nav-mobil{
         display: none;
+    }
+
+    .container, .row, #expandedImg{
+      display: none;
     }
 
   }
@@ -270,4 +282,47 @@
 .carousel-inner{
   min-height: 100%;
   height:100%;
+}
+
+.item img{
+  min-height: 100%;
+  height: 100%;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+/* Style the images inside the grid */
+.column img {
+  cursor: pointer;
+  width: 100%;
+  height: 70%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+  position: relative;
+  display: none;
+  margin-top: 20px;
+  height: 26%;
+  width: 100%;
+}
+
+.container img{
+  height: 100%;
+  width: 100%;
+  max-height: 100%;
 }
