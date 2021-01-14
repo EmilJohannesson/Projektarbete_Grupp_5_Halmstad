@@ -1,26 +1,52 @@
-
- html,body{
-     height: 100%;
-    width: 100%;
+/*     för att ställa in detta så att webbläsaren inte kraschar din webbplats */
+ *{
+     margin: 0%;
+     padding: 0%;
+      box-sizing: border-box;
+      font-family: sans-serif;
+     
     
 }
+/*    bakgrundsfärg på kontaktsidan*/
 .backgroundimg{
     background-color: darkcyan;
    
    
 }
+/*   marginal uppifrån för att ställa in Header  */
 .container{
     margin-top:  5%;
 }
-.contactimg{
-width: 1000px;
-height:1000px;
-height: 24rem;
-width: 17.7rem;
+.col-md-3 h2 {
+    text-align: center;
+}
+.col-md-3 h4 {
+    text-align: center;
+}
+.img-fluid{
+    margin-top: 6%;
+    height: 100%;
+    width: 100%;
+ 
+}
+.sidebar{
+    
+    margin-top: 10%;
+}
+.nav-item{
+    font-weight: 500;
+    list-style: none;
+    
+}
+
+.nav-link{
+    color: brown;
 }
 .form-label{
+    margin-top: 7%;
     font-size: 1.1em;
     text-transform: uppercase;
+    justify-content: center;
     
 }
 .btn-primary{
