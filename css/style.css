@@ -34,7 +34,7 @@
       height: 100vh;
       display: grid;
       grid-template-columns: 100%;
-      grid-template-rows: 15% 1000px 10% 15%;
+      grid-template-rows: 15% 1000px 10% 5%;
       grid-template-areas:
       "nav"
       "main"
@@ -92,7 +92,7 @@
       height: 100vh;
       display: grid;
       grid-template-columns: 20% 80%;
-      grid-template-rows: 290px 1000px 15%;
+      grid-template-rows: 290px 1000px 5%;
       grid-template-areas: 
       "sidebar carousel"
       "sidebar main"
@@ -103,7 +103,6 @@
   
     .sidebar{
       grid-area: sidebar;
-      background: black;
     }
 
     .sticky{
@@ -128,20 +127,12 @@
       margin-right: auto;
       display: grid;
       grid-template-columns: 20% 80%;
-      grid-template-rows: 290px 1000px 15%;
+      grid-template-rows: 290px 1000px 5%;
       grid-template-areas: 
       "sidebar carousel"
       "sidebar main"
       "sidebar footer";
     }
-
-    
-  
-    .sidebar{
-      grid-area: sidebar;
-      background: black;
-    }
-
     .sticky{
         display: none;
     }
@@ -256,7 +247,7 @@
   }
   
   .nav-link{
-    color: #fff;
+    color: black;
     text-transform: uppercase;
     padding: 1rem;
   }
@@ -280,12 +271,11 @@
   
   .maincontent{
     grid-area: main;
-    background: purple;
   }
   
   .footer{
     grid-area: footer;
-    background: green;
+    background: rgb(224, 223, 223);
   }
   
  .carousel img{
