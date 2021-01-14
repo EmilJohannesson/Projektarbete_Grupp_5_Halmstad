@@ -61,6 +61,8 @@
   @media only screen and (min-width: 765px){
     #wrapper{
       width: 100%;
+      padding-left: 5%;
+      padding-right: 5%;
       height: 100vh;
       display: grid;
       grid-template-columns: 20% 80%;
