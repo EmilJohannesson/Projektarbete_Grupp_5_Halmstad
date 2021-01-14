@@ -348,7 +348,6 @@
 
 .titel{
   font-weight: bold;
-<<<<<<< HEAD
 }
 
 .testp{
@@ -373,36 +372,4 @@
   bottom: 95%;
   left: 40%;
   color: red;
-=======
-  
-}
-.carousel-caption{
-  left: 5%;
-}
-.carousel-caption h3, .carousel-caption ul{
-  font-size: small;
-  color: white;
-  list-style-type: circle;
-  text-align: left;
-  list-style: inside;
-  text-align: left;
-}
-
-.carousel-caption h3, .carousel-caption h2, .carousel-caption ul{
-  text-shadow: -1px 1px 0 black,
- 1px 1px 0 black,
- 1px -1px 0 black,
--1px -1px 0 black;
-} 
-.carousel-caption h2{
-  color: red;
-  text-align: left;
-}
-.footer ul{
-  text-align: center;
-  list-style: none;
-}
-.footer li{
-  display: inline;
->>>>>>> 66f1da85cbcd7270a4bfa43efeb80bd30537849a
 }
