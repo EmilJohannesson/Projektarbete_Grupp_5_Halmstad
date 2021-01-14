@@ -1,0 +1,350 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+  
+  html{
+    font-family: sans-serif;
+    font-size: 10px;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+
+  .flexbox-item{
+    width: 30%;
+    margin: 5px;
+    border: 3px solid #333;
+    background-color: #dfdfdf;
+    max-height: 32%;
+    position: relative;
+  }
+  
+  @media only screen and (max-width: 420px){
+    .flexbox-item ol{
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 765px){
+    #wrapper{
+      width: 100%;
+      height: 100vh;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 15% 1000px 10% 15%;
+      grid-template-areas:
+      "nav"
+      "main"
+      "sticky"
+      "footer";
+    }
+
+    .flexbox-item{
+      width: 25%;
+    }
+  
+    #navgrid{
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 50% 50%;
+      grid-template-areas:
+      "välkomstsida produkter"
+      "anställda kontakt";
+      background: black;
+      font-size: 16px;
+    }
+
+    .sticky{
+        grid-area: sticky;
+        background: honeydew;
+        position: sticky;
+        bottom: 0;
+      }
+
+     .nav-mobil{
+      grid-area: nav;
+      background: grey;
+    }
+
+    .sidebar{
+        display: none;
+    }
+
+    .carousel{
+      display: none;
+    }
+  }
+  
+  @media only screen and (min-width: 765px){
+    #wrapper{
+      width: 100%;
+      height: 100vh;
+      display: grid;
+      grid-template-columns: 20% 80%;
+      grid-template-rows: 290px 1000px 15%;
+      grid-template-areas: 
+      "sidebar carousel"
+      "sidebar main"
+      "sidebar footer";
+    }
+
+    
+  
+    .sidebar{
+      grid-area: sidebar;
+      background: black;
+    }
+
+    .sticky{
+        display: none;
+    }
+
+    .nav-mobil{
+        display: none;
+    }
+
+    .container, .row, #expandedImg{
+      display: none;
+    }
+
+  }
+
+  @media only screen and (min-width: 1000px){
+    #wrapper{
+      width: 1000px;
+      height: 100vh;
+      margin-left: auto;
+      margin-right: auto;
+      display: grid;
+      grid-template-columns: 20% 80%;
+      grid-template-rows: 290px 1000px 15%;
+      grid-template-areas: 
+      "sidebar carousel"
+      "sidebar main"
+      "sidebar footer";
+    }
+
+    
+  
+    .sidebar{
+      grid-area: sidebar;
+      background: black;
+    }
+
+    .sticky{
+        display: none;
+    }
+
+    .nav-mobil{
+        display: none;
+    }
+
+    .container, .row, #expandedImg{
+      display: none;
+    }
+
+  }
+  
+
+  .flexbox-container{
+    display: flex;
+    flex-wrap: wrap;
+    height: 1000px;
+    justify-content: center;
+  }
+
+  .flexbox-item a{
+    color: black;
+    text-decoration: none;
+  }
+
+  .flexbox-item a:hover{
+    color: grey
+  }
+
+  .flexbox-item img{
+    height: 50%;
+    width: 100%;
+  }
+
+  .flexbox-item h3{
+    padding-left: 10px;
+    padding-top: 8px;
+  }
+
+  .flexbox-item ol{
+    padding-top: 3px;
+    list-style-type: circle;
+    
+  }
+
+  .flexbox-item h2{
+    position: absolute;
+    color: red;
+    bottom: 0%;
+    left: 37%;
+  }
+
+  .välkomstsida:hover{
+    background: grey;
+  }
+  
+  .välkomstsida{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:2px solid blue;
+    border-radius: 5px;
+  }
+  
+  .produkter:hover{
+    background: grey;
+  }
+  
+  .produkter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:2px solid blue;
+  }
+  
+  .anställda:hover{
+    background: grey;
+  }
+  
+  .anställda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:2px solid blue;
+  }
+  
+  .kontakt:hover{
+    background: grey;
+  }
+  
+  .kontakt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:2px solid blue;
+  }
+  
+  .sidebar{
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  .nav-list{
+    list-style: none;
+  }
+  
+  .nav-item{
+    margin: 5rem 0;
+    margin-top: 2rem;
+  }
+  
+  .nav-link{
+    color: #fff;
+    text-transform: uppercase;
+    padding: 1rem;
+  }
+  
+  .nav-item a:hover{
+    font-weight: bold;
+  }
+  
+  .nav-item a:active{
+    font-size: 15px;
+  }
+  
+  .navbar-item{
+    font-size: 20px;
+  }
+  
+  .carousel{
+    grid-area: carousel;
+    background-color:rgb(78, 27, 27);
+  }
+  
+  .maincontent{
+    grid-area: main;
+    background: purple;
+  }
+  
+  .footer{
+    grid-area: footer;
+    background: green;
+  }
+  
+ .carousel img{
+  height: 100%;
+ }
+
+ .carousel,.item,.active{
+   height:100%;
+   min-height: 100%;
+  }
+.carousel-inner{
+  min-height: 100%;
+  height:100%;
+}
+
+.item img{
+  min-height: 100%;
+  height: 100%;
+}
+
+.column {
+  float: left;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+.column img {
+  cursor: pointer;
+  width: 100%;
+  height: 70%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  position: relative;
+  display: none;
+  margin-top: 20px;
+  height: 26%;
+  width: 100%;
+}
+
+.container img{
+  height: 100%;
+  width: 100%;
+  max-height: 100%;
+}
+
+.container, .row{
+  max-width: 100%;
+}
+
+.beskrivning{
+  margin-left: 10px;
+  margin-right: 10px;
+  color: black;
+}
+
+.titel{
+  font-weight: bold;
+  
+}
