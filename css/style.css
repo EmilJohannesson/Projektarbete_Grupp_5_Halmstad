@@ -348,3 +348,25 @@
   font-weight: bold;
   
 }
+.carousel-caption{
+  left: 5%;
+}
+.carousel-caption h3, ul{
+  font-size: small;
+  color: white;
+  list-style-type: circle;
+  text-align: left;
+  list-style: inside;
+  text-align: left;
+}
+
+.carousel-caption h3, h2, ul{
+  text-shadow: -1px 1px 0 black,
+ 1px 1px 0 black,
+ 1px -1px 0 black,
+-1px -1px 0 black;
+} 
+.carousel-caption h2{
+  color: red;
+  text-align: left;
+}
