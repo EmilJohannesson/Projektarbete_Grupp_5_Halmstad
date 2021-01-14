@@ -12,7 +12,22 @@
   a{
     text-decoration: none;
   }
+
+  .flexbox-item{
+    width: 30%;
+    margin: 5px;
+    border: 3px solid #333;
+    background-color: #dfdfdf;
+    max-height: 32%;
+    position: relative;
+  }
   
+  @media only screen and (max-width: 420px){
+    .flexbox-item ol{
+      display: none;
+    }
+  }
+
   @media only screen and (max-width: 765px){
     #wrapper{
       width: 100%;
@@ -25,6 +40,10 @@
       "main"
       "sticky"
       "footer";
+    }
+
+    .flexbox-item{
+      width: 25%;
     }
   
     #navgrid{
@@ -139,15 +158,6 @@
     justify-content: center;
   }
 
-  .flexbox-item{
-    width: 30%;
-    margin: 5px;
-    border: 3px solid #333;
-    background-color: #dfdfdf;
-    max-height: 32%;
-    position: relative;
-  }
-
   .flexbox-item a{
     color: black;
     text-decoration: none;
@@ -168,14 +178,15 @@
   }
 
   .flexbox-item ol{
-    padding-top: 5px;
+    padding-top: 3px;
     list-style-type: circle;
+    
   }
 
   .flexbox-item h2{
     position: absolute;
     color: red;
-    bottom: 7%;
+    bottom: 0%;
     left: 37%;
   }
 
@@ -325,4 +336,8 @@
   height: 100%;
   width: 100%;
   max-height: 100%;
+}
+
+.container, .row{
+  max-width: 100%;
 }
