@@ -113,9 +113,7 @@
         display: none;
     }
 
-    .container, .row, #expandedImg{
-      display: none;
-    }
+    
 
   }
 
@@ -141,12 +139,7 @@
         display: none;
     }
 
-    .container, .row, #expandedImg{
-      display: none;
-    }
-
   }
-  
 
   .flexbox-container{
     display: flex;
@@ -308,6 +301,7 @@
   cursor: pointer;
   width: 100%;
   height: 70%;
+  border: solid 2px black;
 }
 
 .row:after {
@@ -328,6 +322,7 @@
   height: 100%;
   width: 100%;
   max-height: 100%;
+  border: solid 2px black;
 }
 
 .container, .row{
@@ -338,10 +333,37 @@
   margin-left: 10px;
   margin-right: 10px;
   color: black;
+  position: relative;
 }
 
 .titel{
   font-weight: bold;
+<<<<<<< HEAD
+}
+
+.testp{
+  width: 45%;
+}
+
+.controller{
+  position: absolute;
+  right: 0;
+  bottom: 18%;
+  height: 50%;
+  width: 50%;
+  border: solid 2px black;
+}
+
+.maincontent{
+  overflow: auto;
+}
+
+.pris{
+  position: absolute;
+  bottom: 95%;
+  left: 40%;
+  color: red;
+=======
   
 }
 .carousel-caption{
@@ -372,4 +394,5 @@
 }
 .footer li{
   display: inline;
+>>>>>>> 66f1da85cbcd7270a4bfa43efeb80bd30537849a
 }
