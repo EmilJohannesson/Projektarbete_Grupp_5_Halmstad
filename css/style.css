@@ -351,7 +351,7 @@
 .carousel-caption{
   left: 5%;
 }
-.carousel-caption h3, ul{
+.carousel-caption h3, .carousel-caption ul{
   font-size: small;
   color: white;
   list-style-type: circle;
@@ -360,7 +360,7 @@
   text-align: left;
 }
 
-.carousel-caption h3, h2, ul{
+.carousel-caption h3, .carousel-caption h2, .carousel-caption ul{
   text-shadow: -1px 1px 0 black,
  1px 1px 0 black,
  1px -1px 0 black,
@@ -369,4 +369,11 @@
 .carousel-caption h2{
   color: red;
   text-align: left;
+}
+.footer ul{
+  text-align: center;
+  list-style: none;
+}
+.footer li{
+  display: inline;
 }
