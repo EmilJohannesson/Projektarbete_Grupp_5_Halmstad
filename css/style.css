@@ -271,3 +271,19 @@
   min-height: 100%;
   height:100%;
 }
+
+.carousel-caption h3, ul{
+  color: black;
+  list-style-type: circle;
+  text-align: left;
+  list-style: inside;
+}
+.carousel-caption h2{
+  color: red;
+  text-align: left;
+}
+.carousel-caption{
+  text-shadow: white;
+  left: 5%;
+  bottom: 0%;
+}
