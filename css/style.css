@@ -61,9 +61,15 @@
 
     .sticky{
         grid-area: sticky;
-        background: honeydew;
+        background: rgba(255, 255, 255, 0.397);
         position: sticky;
         bottom: 0;
+      }
+      .sticky h3{
+        text-align: center;
+      }
+      .sticky img{
+        position: absolute;
       }
 
      .nav-mobil{
